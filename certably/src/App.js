@@ -6,16 +6,14 @@ import {
   Route,
 } from "react-router-dom";
 
-import LandlordDashboard from "./pages/LandlordDashboard";
-import TenantDashboard from "./pages/TenantDashboard";
+import Home from '../src/pages/Home';
 
 function App() {
   return (
     <div className="App">
        <BrowserRouter>
           <Routes>
-            <Route path="/landlords" element={<LandlordDashboard />} />
-            <Route path="/tenants" element={<TenantDashboard />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>
     </div>
